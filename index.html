@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font/flaticon.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,400&display=swap" rel="stylesheet">
+
 
     <title>Document</title>
 </head>
@@ -26,109 +30,98 @@
         </section>
     </nav>
     <header>
-        <section>
-            <div>
+        <section class="about-me">
+            <div class="about-me__name">
                 <h1>Erik Guevara</h1>
-                <div>
+                <div class="about-me__socials">
                     <a href="/"><span class="flaticon-001-facebook"></span></a>
                     <a href="/"><span class="flaticon-002-twitter"></span></a>
                     <a href="/"><span class="flaticon-011-instagram"></span></a>
                     <a href="/"><span class="flaticon-010-linkedin"></span></a>
                     <a href="/"><span class="flaticon-008-youtube"></span></a>
                 </div>
-            </div>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis magni, nemo omnis
+                <p class="about-me__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis magni, nemo omnis
                     debitis reprehenderit ipsam eveniet eum, praesentium alias repudiandae totam tenetur error vitae
                     beatae aspernatur molestias fugit sequi.</p>
-            </div>
+            </div>      
         </section>
     </header>
     <main>
-        <section>
-            <div>
-                <div>
-                    <img src="assets/img/perfil_tecnico.PNG" alt="">
-                </div>
-                <div>
-                    Perfil técnico
-                </div>
+        <section class="profile">
+            <div class="section-title">
+                <img class="icon" src="./assets/img/tecnic-profile.svg" alt="">
+                <h2>Tecnic Profile</h2>
             </div>
-            <div>
-                <div>
-                    <h1>Habilidades</h1>
+            <div class="profile__container">
+                <div class="profile__card card-1">        
+                    <h3>Habilidades</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ea quod qui dolore quidem enim
                         maiores quo, deleniti sed voluptatibus harum corrupti eius sunt eaque laboriosam temporibus
                         facere
                         perspiciatis laborum?</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="assets/img/tools.PNG" alt="">
-                    </div>
-                    <div>
-                        <h1>Tools, languages <br> and frameworks</h1>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>html</li>
-                            <li>css</li>
-                            <li>js</li>
-                            <li>larabel</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3>Habilidades</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque provident assumenda dolorum
-                    blanditiis molestiae dolore, incidunt, nostrum quidem sequi accusantium sunt, ea vitae harum
-                    inventore velit maiores ab? Hic.</p>
-            </div>
-            <div>
-                <h3>Habilidades</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque provident assumenda dolorum
-                    blanditiis molestiae dolore, incidunt, nostrum quidem sequi accusantium sunt, ea vitae harum
-                    inventore velit maiores ab? Hic.</p>
-            </div>
-            <div>
-                <h3>Habilidades</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque provident assumenda dolorum
-                    blanditiis molestiae dolore, incidunt, nostrum quidem sequi accusantium sunt, ea vitae harum
-                    inventore velit maiores ab? Hic.</p>
-            </div>
-            <div>
-                <div>
+                <div class="profile__card card-2">
                     <h3>Habilidades</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque provident assumenda
-                        dolorum blanditiis molestiae dolore, incidunt, nostrum quidem sequi accusantium sunt, ea vitae
-                        harum inventore velit maiores ab? Hic.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque provident assumenda dolorum
+                        blanditiis molestiae dolore, incidunt, nostrum quidem sequi accusantium sunt, ea vitae harum
+                        inventore velit maiores ab? Hic.</p>
                 </div>
-                <div>
-                    <img src="assets/img/english_level.PNG" alt="">
+                <div class="profile__card card-3">
+                    <h3>Habilidades</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque provident assumenda dolorum
+                        blanditiis molestiae dolore, incidunt, nostrum quidem sequi accusantium sunt, ea vitae harum
+                        inventore velit maiores ab? Hic.</p>
                 </div>
-            </div>
-            <div>
+                <div class="profile__card card-4">
+                    <h3>Habilidades</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque provident assumenda dolorum
+                        blanditiis molestiae dolore, incidunt, nostrum quidem sequi accusantium sunt, ea vitae harum
+                        inventore velit maiores ab? Hic.</p>
+                </div>
+            
+                <div class="tools">
+                    <div class="profile__tools">
+                        <div class="section-title">
+                            <img class="icon" src="./assets/img/code.svg" alt="tools-image">
+                            <h2>Tools, languages <br> and frameworks</h2>
+                        </div>
+                        <div>
+                            <ul class="profile__skills-bars">
+                                <li class="bar-10">html</li>
+                                <li class="bar-20">css</li>
+                                <li class="bar-30"> js</li>
+                                <li class="bar-50">laravel</li>
+                                <li class="bar-100">react</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="english-level">
+                        
+                        <h2>70% <br/> English Level</h2>
+                    </div>
+                </div>
+            <div class="power profile__values">
                 <img src="assets/img/super_poder.PNG" alt="">
-                <div>
+                <div class="profile__values__desc">
                     <h3>Mi super poder</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab ad a laboriosam aliquam eaque nulla
                         at numquam. Mollitia, iste sint.
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="weakness profile__values">
                 <img src="assets/img/debilidad.PNG" alt="">
-                <div>
+                <div class="profile__values__desc">
                     <h3>Mi mayor debilidad</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti magnam, earum ducimus
                         itaque tenetur nam inventore nihil aperiam velit?
                     </p>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
+        </div>
+    </section>
+</main>
+    <footer class="footer-page">
         <div>
             <h1>Erik Guevara</h1>
             <div class="icons">

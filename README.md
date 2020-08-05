@@ -1,2 +1,2 @@
-# cohord-5-frontend
-frontend cohord [5]
+# cohort-5-frontend
+frontend cohort [5]
