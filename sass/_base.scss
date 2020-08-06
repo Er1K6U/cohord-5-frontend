@@ -18,3 +18,12 @@ $color: $color-seven;
 }
 
 $standar-margin: 30px;
+
+body {
+    font-family: 'Poppins', sans-serif;;
+ }
+ 
+ h1, h2, h3, h4, h5 {
+     color: oscurecer($color);
+ }
+ 

@@ -6,6 +6,97 @@ h1, h2, h3, h4, h5 {
   color: #660519;
 }
 
+.slide {
+  background-color: #F54267;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  max-width: 1340px;
+}
+
+.slide__item {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.slide__item img {
+  border: solid 2px white;
+  border-radius: 50%;
+  margin: 0 -10px;
+}
+
+.slide__item.first-position img {
+  width: 300px;
+  z-index: 2;
+}
+
+.slide__item.second-position img {
+  width: 250px;
+  z-index: 0;
+}
+
+.slide__item.third-position img {
+  width: 200px;
+  z-index: -1;
+}
+
+.slide__item.fourth-position img {
+  width: 150px;
+  z-index: -2;
+}
+
+.slide__buttons {
+  border: none;
+  margin: 30px 0 -40px;
+}
+
+.slide__buttons-single {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  border: none;
+}
+
+.slide__buttons-single:hover, .slide__buttons-single:active {
+  background-color: white;
+  color: black;
+}
+
+.slide-full-page {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .about-me {
   background-color: white;
   display: -webkit-box;
@@ -187,6 +278,7 @@ h1, h2, h3, h4, h5 {
   color: #F54267;
 }
 
+/*Grid*/
 .tools {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -250,6 +342,7 @@ h1, h2, h3, h4, h5 {
   grid-row: 6/7;
 }
 
+/*End grid*/
 .footer-page {
   background-color: #660519;
   text-align: center;
