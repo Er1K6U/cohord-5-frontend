@@ -2,8 +2,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h1, h2, h3, h4, h5 {
+  color: #660519;
+}
+
 .about-me {
-  background-color: #fef8e5;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,17 +24,22 @@ body {
   text-align: center;
 }
 
-.about-me__socials a {
+.about-me__desc {
+  width: 500px;
+}
+
+.socials a {
   text-decoration: none;
   color: black;
 }
 
-.about-me__socials a:hover {
-  color: #F5C022;
+.socials a:hover {
+  color: #F54267;
 }
 
-.about-me__desc {
-  width: 500px;
+.socials-footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .profile {
@@ -49,9 +58,13 @@ body {
 }
 
 .profile__card {
-  border: 1px solid grey;
+  border: 1px solid #660519;
   margin-left: 50px;
   padding: 20px;
+}
+
+.profile__card h3 {
+  color: #F54267;
 }
 
 .profile__values {
@@ -68,19 +81,20 @@ body {
 
 .profile__values img {
   height: 400px;
+  z-index: 1;
 }
 
 .profile__values__desc {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;
+  border-top: 1px solid #660519;
+  border-bottom: 1px solid #660519;
+  border-right: 1px solid #660519;
   margin-left: -60px;
   padding-left: 60px;
   max-width: 200px;
 }
 
 .profile__tools {
-  border: solid 1px grey;
+  border: solid 1px #660519;
   margin-top: 30px;
 }
 
@@ -90,8 +104,12 @@ body {
 }
 
 .profile__skills-bars li {
-  background-color: red;
+  background-color: #F54267;
   margin: 10px 0;
+  padding: 3px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
 }
 
 .profile__skills-bars .bar-10 {
@@ -145,7 +163,7 @@ body {
 }
 
 .section-title .icon {
-  border: solid 2px red;
+  border: solid 2px #F54267;
   border-radius: 50%;
   padding: 12px;
   margin: 0 20px;
@@ -153,7 +171,7 @@ body {
 
 .english-level {
   margin: 30px;
-  border: solid 2px red;
+  border: solid 2px #F54267;
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -162,6 +180,11 @@ body {
 
 .english-level h2 {
   font-size: 40px;
+}
+
+.english-level h2 span {
+  display: block;
+  color: #F54267;
 }
 
 .tools {
@@ -228,8 +251,43 @@ body {
 }
 
 .footer-page {
-  background-color: red;
+  background-color: #660519;
   text-align: center;
   padding: 60px;
+}
+
+.footer-page h1 {
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .tools {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    grid-row: 6 / 8;
+  }
+  .power {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-row: 8/9;
+  }
+  .weakness {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    grid-row: 9/10;
+  }
 }
 /*# sourceMappingURL=main.css.map */

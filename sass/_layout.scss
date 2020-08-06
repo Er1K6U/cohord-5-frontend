@@ -2,28 +2,35 @@ body {
    font-family: 'Poppins', sans-serif;;
 }
 
+h1, h2, h3, h4, h5 {
+    color: oscurecer($color);
+}
+
 .about-me {
-    background-color: aclarar($color-one);
+    background-color: aclarar($color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    &__socials {
-        a {
-            text-decoration: none;
-            color: black;
-         
-
-            &:hover {
-                color: $color-one;
-            }
-        }
-    }
-
     &__desc {
         width: 500px;
+    }
+}
+
+.socials {
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: $color;
+        }
+    }
+    &-footer a {
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -39,9 +46,13 @@ body {
     }
 
     &__card {
-        border:  1px solid grey;
+        border:  1px solid oscurecer($color);
         margin-left: 50px;
         padding: 20px;
+
+        h3 {
+            color: $color;
+        }
     }
 
     &__values {
@@ -51,11 +62,12 @@ body {
 
         img {
             height: 400px;
+            z-index: 1;
         }
         &__desc {
-            border-top: 1px solid grey;
-            border-bottom: 1px solid grey;
-            border-right: 1px solid grey;
+            border-top: 1px solid oscurecer($color);
+            border-bottom: 1px solid oscurecer($color);
+            border-right: 1px solid oscurecer($color);
             margin-left: -60px;
             padding-left: 60px;
             max-width: 200px;
@@ -63,7 +75,7 @@ body {
     }
 
     &__tools {
-        border: solid 1px grey;
+        border: solid 1px oscurecer($color);
         margin-top: $standar-margin;
 }
 
@@ -72,8 +84,12 @@ body {
       margin-right: 30px;
       
       li {
-          background-color: red;
+          background-color: $color;
           margin: 10px 0;
+          padding: 3px;
+          text-transform: uppercase;
+          color: white;
+          font-weight: 700;
         }
 
           .bar-10 {
@@ -106,7 +122,6 @@ body {
           .bar-100 {
             width: 100%;
           } 
-
     }
 }
 
@@ -116,7 +131,7 @@ body {
     align-items: center;
 
     .icon {
-        border: solid 2px red;
+        border: solid 2px $color;
         border-radius: 50%;
         padding: 12px;
         margin: 0 20px;
@@ -125,7 +140,7 @@ body {
 
 .english-level {
     margin: $standar-margin;
-    border: solid 2px red;
+    border: solid 2px $color;
     border-radius: 50%;
     width: 250px;
     height: 250px;
@@ -133,9 +148,13 @@ body {
 
     h2 {
         font-size: 40px;
+
+        span {
+            display: block;
+            color: $color;
+        }
     }
 }
-
 
 .tools {
     grid-column: 2 / 3;
@@ -175,7 +194,10 @@ body {
 }
 
 .footer-page {
-    background-color: red;
+    background-color: oscurecer($color);
     text-align: center;
     padding: 60px;
+    h1 {
+        color: white;
+    }
 }
